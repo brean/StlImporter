@@ -1,0 +1,14 @@
+[remap]
+
+importer="stl.importer"
+type="Mesh"
+uid="uid://ck7ralxao5ir0"
+path="res://.godot/imported/stanford_bunny.stl-90fd9c60ddd3f7ec07775709e144938e.mesh"
+
+[deps]
+
+source_file="res://demo/assets/StanfordBunny/stanford_bunny.stl"
+dest_files=["res://.godot/imported/stanford_bunny.stl-90fd9c60ddd3f7ec07775709e144938e.mesh"]
+
+[params]
+

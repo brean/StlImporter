@@ -1,0 +1,14 @@
+[remap]
+
+importer="stl.importer"
+type="Mesh"
+uid="uid://ds5yh66pxb3jt"
+path="res://.godot/imported/3DBenchy.stl-a4d2171c24f67e316545340c12353b7e.mesh"
+
+[deps]
+
+source_file="res://demo/assets/3DBenchy/3DBenchy.stl"
+dest_files=["res://.godot/imported/3DBenchy.stl-a4d2171c24f67e316545340c12353b7e.mesh"]
+
+[params]
+

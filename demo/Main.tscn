@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://c8vvufgnw83ow"]
+
+[ext_resource type="ArrayMesh" uid="uid://ds5yh66pxb3jt" path="res://demo/assets/3DBenchy/3DBenchy.stl" id="1_y1bgl"]
+[ext_resource type="ArrayMesh" uid="uid://ck7ralxao5ir0" path="res://demo/assets/StanfordBunny/stanford_bunny.stl" id="2_seaoi"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucdt6"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_gg8xm"]
+sky_material = SubResource("ProceduralSkyMaterial_ucdt6")
+
+[sub_resource type="Environment" id="Environment_gcno7"]
+background_mode = 2
+sky = SubResource("Sky_gg8xm")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Node3D" type="Node3D" unique_id=1345079545]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1361375728]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1185958413]
+environment = SubResource("Environment_gcno7")
+
+[node name="3dBenchy" type="MeshInstance3D" parent="." unique_id=203132698]
+transform = Transform3D(0.008103821, -0.0074382843, -3.2513772e-10, 0, -4.8082527e-10, 0.011, -0.0074382843, -0.008103821, -3.542293e-10, -0.41302574, 0.009026408, -1.1493454)
+mesh = ExtResource("1_y1bgl")
+
+[node name="StanfordBunny" type="MeshInstance3D" parent="." unique_id=384569653]
+transform = Transform3D(0.01, 0, 0, 0, -4.3711387e-10, 0.01, 0, -0.01, -4.3711387e-10, 0.38188553, -0.047131598, -0.97344875)
+mesh = ExtResource("2_seaoi")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=845535979]
+transform = Transform3D(1, 0, 0, 0, 0.986632, 0.1629644, 0, -0.1629644, 0.986632, 0.17619896, 0.72179604, 0.68767655)
