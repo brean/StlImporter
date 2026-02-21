@@ -26,12 +26,13 @@ shadow_enabled = true
 environment = SubResource("Environment_gcno7")
 
 [node name="3dBenchy" type="MeshInstance3D" parent="." unique_id=203132698]
-transform = Transform3D(0.008103821, -0.0074382843, -3.2513772e-10, 0, -4.8082527e-10, 0.011, -0.0074382843, -0.008103821, -3.542293e-10, -0.41302574, 0.009026408, -1.1493454)
+transform = Transform3D(0.00079536776, -0.0006061272, -2.6494668e-11, 3.3692834e-19, -4.3711392e-11, 0.001, -0.0006061272, -0.00079536776, -3.4766624e-11, -0.06627378, 0, -0.9733899)
 mesh = ExtResource("1_y1bgl")
 
 [node name="StanfordBunny" type="MeshInstance3D" parent="." unique_id=384569653]
-transform = Transform3D(0.01, 0, 0, 0, -4.3711387e-10, 0.01, 0, -0.01, -4.3711387e-10, 0.38188553, -0.047131598, -0.97344875)
+transform = Transform3D(0.001, 0, 0, 0, -4.371139e-11, 0.001, 0, -0.001, -4.371139e-11, 0.046906635, 0, -0.9915455)
 mesh = ExtResource("2_seaoi")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=845535979]
-transform = Transform3D(1, 0, 0, 0, 0.986632, 0.1629644, 0, -0.1629644, 0.986632, 0.17619896, 0.72179604, 0.68767655)
+transform = Transform3D(1, 0, 0, 0, 0.986632, 0.1629644, 0, -0.1629644, 0.986632, 0, 0.2045447, 0)
+fov = 20.0
