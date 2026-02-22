@@ -27,13 +27,19 @@ func _get_preset_count():
 	
 func _get_import_options(
 		_path: String, _preset_index: int) -> Array[Dictionary]:
-	return []
+	return [
+		{
+			"name": "print_debug",
+			"default_value": false,
+			"hint_string": "For every imported STL, measuring how long the import took."
+		},
+	]
 	
 func _get_preset_name(_preset):
 	return "Unknown"
 	
 func _import(
-		_source_file: String, _save_path: String, _options: Dictionary,
+		source_file: String, save_path: String, options: Dictionary,
 		_platform_variants: Array[String], _gen_files: Array[String]):
 	var start_time = Time.get_ticks_msec()
 
@@ -56,9 +62,10 @@ func _import(
 	var final_mesh := surface_tool.commit()
 	var res = ResourceSaver.save(final_mesh, "%s.%s" % [save_path, _get_save_extension()])
 
-	var now = Time.get_ticks_msec()
-	var elapsed = (now - start_time) / 1000.0
-	print("Done importing ", source_file, " took: ", elapsed)
+	if options.get("print_debug", true):
+		var now = Time.get_ticks_msec()
+		var elapsed = (now - start_time) / 1000.0
+		print("Done importing ", source_file, " took: ", elapsed)
 
 	return res
 

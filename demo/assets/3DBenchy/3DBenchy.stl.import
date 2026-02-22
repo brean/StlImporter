@@ -12,3 +12,4 @@ dest_files=["res://.godot/imported/3DBenchy.stl-a4d2171c24f67e316545340c12353b7e
 
 [params]
 
+print_debug=true

@@ -12,3 +12,4 @@ dest_files=["res://.godot/imported/stanford_bunny.stl-90fd9c60ddd3f7ec07775709e1
 
 [params]
 
+print_debug=true
